@@ -27,12 +27,13 @@ window.addEventListener('keydown', (e) => {
   if (!window.sender) return
   e.preventDefault()
 
-  const keyCodes = [e.keyCode]
-  if (e.shiftKey) keyCodes.push(16)
+  const keyCodes = []
   if (e.ctrlKey) keyCodes.push(17)
-  if (e.altKey) keyCodes.push(18)
   if (e.metaKey) keyCodes.push(91)
+  if (e.altKey) keyCodes.push(18)
+  if (e.shiftKey) keyCodes.push(16)
+  keyCodes.push(e.keyCode)
 
-  console.log('send keys', keyCodes)
+  console.log('send keys', keyCodes, e)
   window.electron.keyEvent(keyCodes)
 })
