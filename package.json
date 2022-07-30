@@ -1,0 +1,20 @@
+{
+  "name": "hypermote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron main",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nut-tree/nut-js": "^2.1.1",
+    "hyperswarm": "^3.0.4",
+    "random-words": "^1.2.0"
+  },
+  "devDependencies": {
+    "electron": "^19.0.10"
+  }
+}
